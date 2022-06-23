@@ -9,7 +9,7 @@
     "test:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:e2e": "playwright test --config=e2e.config.ts --project=Chromium",
-    "test:api": "playwright test --config=api.config.ts --project=Chromium"
+    "test:api": "playwright test --config=api.config.ts --project=Chromium --report=list"
   },
   "author": "Mateusz Fidura",
   "license": "ISC",
