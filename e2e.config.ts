@@ -3,7 +3,7 @@ import { chromium, PlaywrightTestConfig } from '@playwright/test'
 const config: PlaywrightTestConfig = {
   timeout: 10000,
   retries: 0,
-  testDir: 'tests',
+  testDir: 'tests/e2e',
   use: {
     headless: true,
     viewport: {
