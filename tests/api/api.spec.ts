@@ -69,7 +69,7 @@ test.describe.parallel('Api testing in Playwright', () => {
     expect(responseBody.job).toBe('new job')
     expect(responseBody.updatedAt).toBeTruthy()
   })
-  test.only('Delete user', async ({ request }) => {
+  test('Delete user', async ({ request }) => {
     const response = await request.delete(`${baseUrl}/users/2`)
     // const responseBody = JSON.parse(await response.text())
     expect(response.status()).toBe(204)
