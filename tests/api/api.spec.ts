@@ -43,8 +43,8 @@ test.describe.parallel('Api testing in Playwright', () => {
       },
     })
     const responseBody = JSON.parse(await response.text())
-    expect(responseBody.status()).toBe(200)
-    expect(responseBody.token).toBe('QpwL5tke4Pnpja7X4')
+    expect(response.status()).toBe(200)
+    expect(responseBody.token).toBeTruthy()
   })
   test('Login - Failed', async ({ request }) => {
     const response = await request.post(`${baseUrl}/login`, {
