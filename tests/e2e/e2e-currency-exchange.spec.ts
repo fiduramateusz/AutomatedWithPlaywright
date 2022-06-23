@@ -6,7 +6,7 @@ import { HomePage } from '../../page-objects/HomePage'
 import { LoginPage } from '../../page-objects/LoginPage'
 import { OnlineBanking } from '../../page-objects/OnlineBankingPage'
 
-test.describe.only('Currency Exchange Form', () => {
+test.describe('Currency Exchange Form', () => {
   let homePage: HomePage
   let loginPage: LoginPage
   let payBillsNavbar: PayBillsNavbar
